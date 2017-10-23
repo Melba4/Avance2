@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css?family=Cormorant|Vast+Shadow');
+*{
+	margin:0;
+	padding:0;
+	
+}
+body{
+    
+	color:black;
+	font-size:20px;
+	line-height:32px;
+	margin:0;
+	
+	padding:0;
+
+}
+label.toogle,[id^=drop]{
+	display:none;
+}
+nav{
+	top:0px;
+	position:fixed;
+	margin:0;
+	padding:0;
+	background:navy;
+	
+	width:100%;
+}
+#logo{
+	display:block;
+	padding:0 30px;
+	float:left;
+	font-size:20px;
+	line-height:60px;
+	color:white;
+}
+nav ul{
+	float:right;
+	margin:0;
+	list-style: none;
+	padding: 0;
+	position:relative;
+}
+nav ul li{
+	margin:0px;
+
+	display:inline-block;
+	float:left;
+	background:navy;
+}
+nav a{
+	display:block;
+	padding:0 25px;
+	color:#fff;
+	font-size:20px;
+	line-height:60px;
+	text-decoration:none;
+}
+nav a:hover{
+	color:white;
+	font-weight: bold;
+	background:rgba(0,0,0,0.10);
+	border-radius: 1px;
+	transform: scale(1);
+	transition: color 1s, transform 3s;
+	
+}
+nav a:active{
+	font-weight: bold;
+
+}	
+
+
+nav ul ul{
+	display:none;
+	position:absolute;
+	top:60px;
+}
+nav ul li:hover > ul{
+	display:block;
+
+
+}
+
+nav ul ul li{
+	float:none;
+	display:block;
+	width:170px;
+	position:relative;
+}
+
+nav ul ul ul li{
+	position:relative;
+	top:-60px;
+	left:170px;
+	
+}
+nav:after{
+	content:"";
+	display:block;
+	clear:both;
+}
+
+main{
+	width:90%;
+	max-width:1000px;
+	margin:100px auto;
+	background:white;
+	padding:20px;
+	box-shadow:0px 2px 5px rgba(0,0,0,0.75);
+}
+main article p{
+	text-align:justify;
+}
+h2{
+font-family: 'Cormorant', serif;
+font-size:60px;
+margin-bottom:20px;
+text-align:center;
+color:navy;
+}
+h4{
+	font-family: 'Vast Shadow', cursive;
+	text-align:center;
+}
+.a img{
+	border:12px solid cyan;
+	margin:0px 250px 0px 250px;
+
+}
+table{
+	border:1px solid black;
+}
+thead{
+	border:1px solid black;
+}
+thead tr th{
+	font-size:15px;
+	font-family: 'Vast Shadow', cursive;
+	padding-left:12px;
+}
+tbody{
+	border:1px solid black;
+	font-family: 'Vast Shadow', cursive;
+	font-size:10px;
+}
+footer{
+	width: 100%;
+	background-color:navy;
+    border-top: 10px solid white;
+	box-shadow:  0px 3px 3px 4px #000;
+	height: 140px;
+	overflow: hidden;
+	text-align: center;
+
+
+}
+#nota{
+	margin-top: 30px;
+}
+
+footer p{	
+	text-align: center;
+	font-size: 13px;
+	color:white;
+	font-family: 'Ranga', cursive;
+
+}
+/*Responsive*/
+@media all and (max-width:768px){
+	nav{
+		margin:0;
+
+	}
+	#logo{
+		display:inline-block;
+		padding:0 0 0 20px;
+		text-align:center;
+	}
+	nav ul li{
+		display:block;
+		width:100%;
+		border-top:1px solid white;
+
+	}
+	label.toogle{
+		background-color:#4040B2;
+		border:none;
+		color:#fff;
+		cursor:pointer;
+		font-size:20px;
+		display:block;
+		line-height:60px;
+		padding:0 20px;
+		text-decoration:none;
+
+	}
+	label.icono{
+		background-color:rgba(0,0,0,0.3);
+		border-left:1px solid white;
+		display:inline-block;
+		float:right;
+	}
+	.toogle:hover{
+	 	background-color: #000000;
+	 }
+	 .menu{
+	 	display:none;
+	 }
+	 [id^=drop]:checked + ul{
+	 	display:block;
+	 	width:100%;
+	 }
+
+	.toogle + a{
+		display:none;
+	}
+	nav ul ul{
+		color:#fff;
+		float:none;
+		position:static;
+	}
+
+	nav ul ul li{
+		display:block;
+		width:100%;
+	}
+
+	nav ul ul ul li{
+		position:static;
+	}
+
+	nav ul ul li:hover > ul, nav ul li:hover > ul{
+		display:none;
+	}
+
+	nav ul ul .toogle, nav ul ul a{
+		padding: 0 40px;
+	}
+	nav ul ul ul a{
+		padding:0 80px;
+	}
+	nav a:hover{
+	color:white;
+	font-weight: bold;
+	background:rgba(0,0,0,0.10);
+}
+.a img{
+	width:300px;
+	height:200px;
+	border:12px solid chartreuse;
+	margin:0px 30px 0px 30px;
+	
+
+}
+h2{
+
+font-family: 'Cormorant', serif;
+font-size:30px;
+margin-bottom:20px;
+text-align:center;
+color:navy;
+}
+h4{
+	font-family: 'Vast Shadow', cursive;
+	text-align:center;
+}
+table{
+	border:1px solid black;
+}
+thead{
+	border:1px solid black;
+}
+thead tr th{
+	font-size:10px;
+	font-family: 'Vast Shadow', cursive;
+	padding-left:12px;
+}
+tbody{
+	border:1px solid black;
+	font-family: 'Vast Shadow', cursive;
+	font-size:10px;
+}
+
+}
+
+//Estilo de el mapa
+.map__image{
+	width: 75%;
+	float: left;
+}
+.map__image path {
+	fill: #a4ced2;
+	stroke: #FFF;
+	stroke-width: 1px;
+	transition: fill 0.3s;
+}
+
+.map__image path:hover {
+	fill: #00FFFF;
+}
+
+.map__list{
+	float: right;
+	width: 75%;
+}
+
+.map__list a{
+	color: inherit;
+	text-decoration: none;
+	transition:color 0.3s;
+}
+
+#img{
+	position: relative;
+	top: -20em;
+	float: right;
+}
+
+ul{
+    list-style: none;
+}
+ 
+#eliminar{
+    margin-top: -10px;
+    height: 100%;
+}
+

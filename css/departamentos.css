@@ -1,0 +1,25 @@
+
+
+main h2{
+	text-align:center;
+	color:navy;
+}
+
+main img{
+	margin-left:300px;
+}
+
+main p{
+	text-align:justify;
+}
+@media all and (max-width:768px){
+
+	main img{
+		margin-left:5px;
+	}
+	main p{
+	text-align:justify;
+}
+
+}
+
